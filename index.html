@@ -21,21 +21,6 @@
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
   <!-- import head_begin begin -->
-      <meta name="msapplication-TileColor" content="#ffffff">
-      <meta name="msapplication-config" content="https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/browserconfig.xml">
-      <meta name="theme-color" content="#ffffff">
-      <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/dekmp7ltk/image/upload/v1735644431/jingui180-180_igfgze.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dekmp7ltk/image/upload/v1735644433/jingui32-32_cpcfqe.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/dekmp7ltk/image/upload/v1735644427/jingui16-16_evp9ya.png">
-      <link rel="manifest" href="https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/site.webmanifest">
-      <link rel="mask-icon" href="https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/safari-pinned-tab.svg" color="#5bbad5">
-      <link rel="shortcut icon" href="https://res.cloudinary.com/dekmp7ltk/image/upload/v1735645056/m8vs9-8fzbn-001_ntyofw.ico">
-      <meta name="apple-mobile-web-app-title" content="Volantis">
-      <meta name="application-name" content="Volantis">
-      <meta name="msapplication-TileColor" content="#f4f4f4">
-      <meta name="msapplication-TileImage" content="https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/favicon-32x32.png">
-      <meta name="theme-color" content="#f4f4f4" media="(prefers-color-scheme: light)">
-      <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
   <!-- import head_begin end -->
   <!-- Custom Files headBegin begin-->
   <meta name="msapplication-TileColor" content="#ffffff">
@@ -56,6 +41,7 @@
   <!-- Custom Files headBegin end-->
   <!-- front-matter head_begin begin -->
   <!-- front-matter head_begin end -->
+    <link rel="shortcut icon" type='image/x-icon' href="https://res.cloudinary.com/dekmp7ltk/image/upload/v1735645056/m8vs9-8fzbn-001_ntyofw.ico">
   <link rel="preload" href="/css/style.css" as="style">
   <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
@@ -1771,9 +1757,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1735647109351),
+    lastupdate: new Date(1735654666198),
     sidebar: {
-      for_page: ["blogger","category","tagcloud","donate"],
+      for_page: ["blogger","category","tagcloud"],
       for_post: ["toc"],
       webinfo: {
         lastupd: {
@@ -1781,7 +1767,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           friendlyShow: true
         },
         runtime: {
-          data: "2020/01/01",
+          data: "2025/01/01",
           unit: "天"
         }
       }
@@ -2216,7 +2202,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
         <a class="title flat-box" target="_self" href='/'>
           
-            <img no-lazy class='logo' src='https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/Logo-NavBar@3x.png'/>
+            <img no-lazy class='logo' src='es.cloudinary.com/dekmp7ltk/image/upload/v1735644433/jingui32-32_cpcfqe.png'/>
           
           
           
@@ -2232,13 +2218,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/" title="博客"
+                href="/" title="首页"
                   
                   
                   
                     active-action="action-home"
                   >
-                  <i class='fa-solid fa-rss fa-fw'></i>博客
+                  <i class='fa-solid fa-rss fa-fw'></i>首页
                 </a>
                 
               </li>
@@ -2327,6 +2313,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                 </a>
                 
               </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box header toggle-mode-btn">
+                  <i class='fas fa-moon fa-fw'></i>暗黑模式
+                </a>
+              <li>
             
           
           
@@ -2353,13 +2349,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/" title="博客"
+                href="/" title="首页"
                   
                   
                   
                     active-action="action-home"
                   >
-                  <i class='fa-solid fa-rss fa-fw'></i>博客
+                  <i class='fa-solid fa-rss fa-fw'></i>首页
                 </a>
                 
               </li>
@@ -2448,6 +2444,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                 </a>
                 
               </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box header toggle-mode-btn">
+                  <i class='fas fa-moon fa-fw'></i>暗黑模式
+                </a>
+              <li>
             
           
             
@@ -2487,35 +2493,35 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               
               active-action="action-v4getting-started">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f5c3.svg'><p>博客</p>
+              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f3e1.svg'><p>博客</p>
             </a>
           
             <a href="/faqs/"
               
               
               active-action="action-faqs">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f516.svg'><p>帮助</p>
+              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f5c2.svg'><p>分类</p>
             </a>
           
             <a href="/examples/"
               
               
               active-action="action-examples">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f396.svg'><p>示例</p>
+              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f516.svg'><p>标签</p>
             </a>
           
             <a href="/contributors/"
               
               
               active-action="action-contributors">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f389.svg'><p>社区</p>
+              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f5c3.svg'><p>归档</p>
             </a>
           
             <a href="/archives/"
               
               
               active-action="action-archives">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f4f0.svg'><p>友链</p>
+              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/2764.svg'><p>友链</p>
             </a>
           
             <a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/"
@@ -2546,83 +2552,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       
         
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
           
         
           
@@ -2633,83 +2562,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
         
           
         
@@ -2723,349 +2575,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         
           <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/12/31/869145968/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="晓天的浮空岛">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="晓天的浮空岛">
-    <meta itemprop="description" content="欢迎来到晓天的个人博客！">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/12/31/869145968/"  itemprop="url">
-        12月31日记——年终碎碎念
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        试想一下吧！一个人竟然因为中午睡觉的行为“不符合安排”，或者是因为早上或午饭后迁延了一点时间，就心跳怦怦地睡不着了，想要去完成那些“对自己很重要的事情”——比如找实习，比如做研究！可是，荒唐的一件事是，他竟然愿意花上一个小时跟朋友聊天或者仅仅是刷社交媒体，却不愿意花半个小时的时间让自己睡上一个无忧无虑的好觉。这种本末倒置的状态呀，难怪生活会让他感觉一团糟了。
-这就是我的状态，这么想想还挺可笑...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-12-31T16:10:42-08:00">2024-12-31</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/12/31/869145968/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/12/25/868963594/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="晓天的浮空岛">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="晓天的浮空岛">
-    <meta itemprop="description" content="欢迎来到晓天的个人博客！">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/12/25/868963594/"  itemprop="url">
-        《清醒地活》读书小结
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        第一部分 觉醒中的意识第1章 脑海中的声音
-你在内心的世界里重新创造了外部世界，人后活在自己的思维里。产生问题的原因不在生活本身，而在对生活进行思考得出的混乱想法。
-第2章 内心深处的室友
-目前而言，你的人生属于你的内心深处的室友，也就是你的心理状态。
-第3章 你是谁
-你不是身体，不是经历，不是标签，而是你的意识（灵魂&#x2F;自性&#x2F;阿特曼）
-第4章 清醒的自我
-觉知和客体是不同...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-12-25T16:25:13-08:00">2024-12-25</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/12/25/868963594/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/21/866226477/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="晓天的浮空岛">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="晓天的浮空岛">
-    <meta itemprop="description" content="欢迎来到晓天的个人博客！">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/21/866226477/"  itemprop="url">
-        9月21日记
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        今天看了很多的B站视频，开始思考是不是因为禁用了QQ所以转战B站了。后来想想，之前除了看QQ空间，看X也蛮多的。恐怕是别的原因导致自己停不住地想要查看这些社交媒体&#x2F;视频网站。
-回想一下，看了很多别人的房子，别人的经历，就连游戏也是关于别人的故事的。我总是很想要了解别人的生活和别人的所思所想，也很容易受到别人的改变。看了一本书，态度和思想就很容易改变；听到别人的谈话，行动也会有很大的...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-21T18:19:02-07:00">2024-09-21</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/21/866226477/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/20/866178538/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="晓天的浮空岛">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="晓天的浮空岛">
-    <meta itemprop="description" content="欢迎来到晓天的个人博客！">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/20/866178538/"  itemprop="url">
-        9月19日记
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        非常多负面情绪需要倾倒在这里，比如怀疑，比如气馁。是的，我需要更加积极地去面对硕士生活，但是我感觉我做不到……所有的欢乐时光都已经过去，我却依然在迷茫之中。没有什么会被改变，过去的不足和缺点到了这边不会自动消失，依然需要很多的决心和改变。我会怀疑为什么要做出出国留学的决定，然后为自己可能没办法控制可能的结果而感到非常害怕。
-这些天来的经历是混乱的：跟老师，跟朋友，跟“对象”……所有这些关系都...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-20T02:42:12-07:00">2024-09-20</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/20/866178538/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/07/864889404/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="晓天的浮空岛">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="晓天的浮空岛">
-    <meta itemprop="description" content="欢迎来到晓天的个人博客！">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/08/07/864889404/"  itemprop="url">
-        8月7日记
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        许久地翻看着空间、朋友圈，寻找着一些表面的乐趣……这时朋友发来的运动打卡图片突然击中了我：我多久没有像以前那样规律地运动了？
-这段时间觉得心情低落，可能大部分原因是牙齿的事情无法如预想一般在出国前弄好了——这种心情就好像是DDL战士屈辱地战败在了死线面前，忐忑着将要面临什么样的惩罚，祈求着能够得到些许宽恕。
-没有准备的仗能打赢吗？没有计划没有目标的状态能不让人焦虑吗？遁入一种休息的状态当中，...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-08-07T23:47:27-07:00">2024-08-07</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/08/07/864889404/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/07/扩列条/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="晓天的浮空岛">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="晓天的浮空岛">
-    <meta itemprop="description" content="欢迎来到晓天的个人博客！">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/08/07/%E6%89%A9%E5%88%97%E6%9D%A1/"  itemprop="url">
-        扩列条
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        【求眼熟】【求转】【欢迎扩列】时间飞快！距离伊克首次参展就要一周年了！今年再次出没兽界，不过是以staff身份；也会去FurryGooo。久未参展，期盼相聚~我是晓天，借伊克空间自我介绍一下：19年入圈，目前有三个崽子，（简陋的）介绍在p1p3，感兴趣的朋友可以看看噢实体化出现的是狗狗龙伊克，妈咪是@きりひろし  ，雾熙超会的！p4p5是@luomz  拍的照片！p6是Jagat【了解更多】...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-08-07T10:51:10-07:00">2024-08-07</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/08/07/%E6%89%A9%E5%88%97%E6%9D%A1/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+            <div class="post post-v3 white-box reveal shadow blur"  itemscope itemtype="http://schema.org/Article" >
   <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/06/hello-world/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="晓天的浮空岛">
@@ -3121,8 +2631,8 @@ Qu...
       
         
           <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/05/04/861943373/">
+            <div class="post post-v3 white-box reveal shadow blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2020/01/04/747943502/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="晓天的浮空岛">
   </span>
@@ -3140,16 +2650,16 @@ Qu...
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/05/04/861943373/"  itemprop="url">
-        5月4日记
+      <a href="/2020/01/04/747943502/"  itemprop="url">
+        2020周记Week1——新年与读书
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        这几天一直感觉心里有话想说，但是不知道以一种什么方式说出来。这是一种怎么样的情绪呢？是春天的思绪吗？还是一种不知道是愁思还是疲惫的感觉呢？好像有一段时间还特别容易生气，想要对身边的人破口大骂。感觉有很多想要去实现的想法，但是又都没有办法实现，因此感到特别气馁……感觉对自己应该做的事情也提不起劲头。
-跟bo的关系，我现在也觉得有一点疏离的感觉。这是一种比较自由的爱情，还是只是两个人都开始觉得有...
+        落笔写这一周记的原因有很多。首先，我听说，了解自己的进步与不足，最好的办法就是时常小结自己一段时间的成果；其次，2020年于我，来得太快、太急，以至于感觉——上一个暑假很遥远，8月份却只是昨天的事（大概是整理那些杂七杂八的未完成的试卷让我产生了这样的感觉）；其三，平时的反思也不是没有，只是太杂太易忘却。只有写下那些我认为在理的话，日后才能不忘记当初的承诺和决心。
+ 过去的这么多高三的日子里，...
       
     
   </div>
@@ -3157,12 +2667,20 @@ Qu...
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-05-04T23:51:50-07:00">2024-05-04</time>
+        <time itemprop="dateCreated datePublished" datetime="2020-01-04T18:27:06-08:00">2020-01-04</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E6%97%A5%E8%AE%B0/">日记</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E6%97%A5%E8%AE%B0/" itemprop="url"><span itemprop="name">日记</span></a>
+            </span>
+          
         
       </div>
       
         <div>
-          <a class='readmore' href='/2024/05/04/861943373/' itemprop="url">
+          <a class='readmore' href='/2020/01/04/747943502/' itemprop="url">
             Read More
           </a>
         </div>
@@ -3177,8 +2695,8 @@ Qu...
       
         
           <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/03/04/859934640/">
+            <div class="post post-v3 white-box reveal shadow blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2019/02/05/705952035/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="晓天的浮空岛">
   </span>
@@ -3196,17 +2714,17 @@ Qu...
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/03/04/859934640/"  itemprop="url">
-        3月4日记
+      <a href="/2019/02/05/705952035/"  itemprop="url">
+        聊聊春晚热点一二
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        有在思考一些关于“热爱”的事情
-初中的时候总是看着打篮球的众人问：这么多人抢一个球，有什么好玩的呢，它的意义？我问过别人，回答我也记不清了，兴许是印象不够深刻
-热爱是处于一种痴迷的状态吗？我想也不是。我见过侃侃而谈自己的爱好的人，那模样就好像在自己的世界里无法自拔。但我相信会有一个时刻，抽身出来用略带理性的思考的眼光看着自己之后发现，这种痴情为何这么奇怪地不正常（姑且用这个词吧，“异乎众人”...
+        小时候看春晚，只知道魔术刺激，杂技惊艳。前几年看春晚，和小伙伴们吐槽节目“又红又专”，没有什么新意。反观近几年的春晚，我倒是越来越感觉到导演在照顾全年龄段观众上的用心，和在“群众路线”上的努力。
+拿小品节目举例子吧，开心麻花的出品是一如既往的好，贾玲的“误会”型小品也让人啼笑皆非，蔡明、潘长江的“老伴儿”搭档在葛优“大忽悠”加入下欢乐连连，郭冬临和邵峰的“代驾”满满都是正能量。
+过去这一年，...
       
     
   </div>
@@ -3214,69 +2732,20 @@ Qu...
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-03-04T23:15:17-08:00">2024-03-04</time>
+        <time itemprop="dateCreated datePublished" datetime="2019-02-05T12:10:20-08:00">2019-02-05</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E6%97%A5%E8%AE%B0/">日记</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E6%97%A5%E8%AE%B0/" itemprop="url"><span itemprop="name">日记</span></a>
+            </span>
+          
         
       </div>
       
         <div>
-          <a class='readmore' href='/2024/03/04/859934640/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/11/06/855859453/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="晓天的浮空岛">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="晓天的浮空岛">
-    <meta itemprop="description" content="欢迎来到晓天的个人博客！">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/11/06/855859453/"  itemprop="url">
-        11月6日记
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        这段时间，各种想法很多，也会有十分沮丧失落，需要找个人倾诉的时候。但是终究并不是每个人都有时间陪自己聊那些有的没的，大多数时间还是要Suck it up，自己一个人缓解。
-有些值得总结的经验，我认为很有必要在此记录一下，下面分点列述，可以作为我的个人原则：
-学习、工作的时候，决不能长时间固守在电脑旁，必须安排休息时间。不安排休息时间表面上提高了效率，实际上其带来的能量耗竭会在之后带来更严重的...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-11-06T15:03:21-08:00">2023-11-06</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/11/06/855859453/' itemprop="url">
+          <a class='readmore' href='/2019/02/05/705952035/' itemprop="url">
             Read More
           </a>
         </div>
@@ -3292,21 +2761,6 @@ Qu...
     
   </section>
   
-    
-      <br>
-      <div class="prev-next">
-        
-        <p class="current">
-          1 / 9
-        </p>
-        
-          <a class="next" rel="next" href="/page/2/">
-            <section class="post next white-box shadow floatable blur">
-              &nbsp;Next&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
-            </section>
-          </a>
-        
-      </div>
     
   
 
@@ -3319,65 +2773,16 @@ Qu...
     
     
       
-<section class="widget blogger desktop mobile pjax">
+<section class="widget blogger desktop pjax">
   <div class='content'>
     
       
         <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/Logo-NavBar@3x.png'/>
+          <img no-lazy src='https://res.cloudinary.com/dekmp7ltk/image/upload/v1735645556/%E6%99%93%E5%A4%A9%E5%A4%B4%E5%83%8F_jqsved.jpg'/>
         </a>
       
     
     
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">晓天的浮空岛</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fa-solid fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
     
   </div>
 </section>
@@ -3389,6 +2794,28 @@ Qu...
     
     
       
+  
+  <section class="widget category desktop pjax">
+    
+  <header>
+    
+      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+    
+  </header>
+
+
+    <div class='content'>
+      <ul class="entry navigation">
+        
+          <li><a class="flat-box"
+            title="/categories/%E6%97%A5%E8%AE%B0/" href="/categories/%E6%97%A5%E8%AE%B0/"
+            active-action="action-categoriesE697A5E8AEB0"
+            ><div class='name'>日记</div><div class='badge'>(2)</div></a></li>
+        
+      </ul>
+    </div>
+  </section>
+
 
     
   
@@ -3398,7 +2825,7 @@ Qu...
     
       
   
-  <section class="widget tagcloud desktop mobile pjax">
+  <section class="widget tagcloud desktop pjax">
     
   <header>
     
@@ -3408,14 +2835,12 @@ Qu...
 
 
     <div class='content'>
-      <a href="/tags/%E6%89%A9%E5%88%97/" style="font-size: 14px; color: #999">扩列</a> <a href="/tags/%E6%97%A5%E8%AE%B0/" style="font-size: 24px; color: #555">日记</a>
+      <a href="/tags/%E9%AB%98%E8%80%83/" style="font-size: 14px; color: #999">高考</a>
     </div>
   </section>
 
 
     
-  
-
   
 
 
@@ -3500,9 +2925,39 @@ Qu...
         <div class="social-wrapper" itemprop="about" itemscope itemtype="http://schema.org/Thing">
           
             
-          
+              <a href="/atom.xml"
+                class="social fas fa-rss flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer" itemprop="url">
+                
+              </a>
             
           
+            
+              <a href="mailto:ttyaaron@stanford.edu"
+                class="social fas fa-envelope flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer" itemprop="url">
+                
+              </a>
+            
+          
+            
+              <a href="https://github.com/ttyaaron"
+                class="social fab fa-github flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer" itemprop="url">
+                
+              </a>
+            
+          
+            
+              <a href="https://music.163.com/#/user/home?id=1839970553"
+                class="social fas fa-headphones-alt flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer" itemprop="url">
+                
+              </a>
             
           
         </div>
@@ -3527,10 +2982,16 @@ Qu...
       
     
       
-        <div class='copyright'>
-        <p><a href="/">Copyright © since 2024 Blablablabla</a></p>
-
-        </div>
+        
+          <div><br></div>
+        
+      
+    
+      
+        
+          <div><p><a href="/">–网站的尽头–</a></p>
+</div>
+        
       
     
     <!-- Custom Files footer begin-->

@@ -21,21 +21,6 @@
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
   <!-- import head_begin begin -->
-      <meta name="msapplication-TileColor" content="#ffffff">
-      <meta name="msapplication-config" content="https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/browserconfig.xml">
-      <meta name="theme-color" content="#ffffff">
-      <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/dekmp7ltk/image/upload/v1735644431/jingui180-180_igfgze.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dekmp7ltk/image/upload/v1735644433/jingui32-32_cpcfqe.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/dekmp7ltk/image/upload/v1735644427/jingui16-16_evp9ya.png">
-      <link rel="manifest" href="https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/site.webmanifest">
-      <link rel="mask-icon" href="https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/safari-pinned-tab.svg" color="#5bbad5">
-      <link rel="shortcut icon" href="https://res.cloudinary.com/dekmp7ltk/image/upload/v1735645056/m8vs9-8fzbn-001_ntyofw.ico">
-      <meta name="apple-mobile-web-app-title" content="Volantis">
-      <meta name="application-name" content="Volantis">
-      <meta name="msapplication-TileColor" content="#f4f4f4">
-      <meta name="msapplication-TileImage" content="https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/favicon-32x32.png">
-      <meta name="theme-color" content="#f4f4f4" media="(prefers-color-scheme: light)">
-      <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
   <!-- import head_begin end -->
   <!-- Custom Files headBegin begin-->
   <meta name="msapplication-TileColor" content="#ffffff">
@@ -56,6 +41,7 @@
   <!-- Custom Files headBegin end-->
   <!-- front-matter head_begin begin -->
   <!-- front-matter head_begin end -->
+    <link rel="shortcut icon" type='image/x-icon' href="https://res.cloudinary.com/dekmp7ltk/image/upload/v1735645056/m8vs9-8fzbn-001_ntyofw.ico">
   <link rel="preload" href="/css/style.css" as="style">
   <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
@@ -1771,9 +1757,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1735647109351),
+    lastupdate: new Date(1735654666198),
     sidebar: {
-      for_page: ["blogger","category","tagcloud","donate"],
+      for_page: ["blogger","category","tagcloud"],
       for_post: ["toc"],
       webinfo: {
         lastupd: {
@@ -1781,7 +1767,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           friendlyShow: true
         },
         runtime: {
-          data: "2020/01/01",
+          data: "2025/01/01",
           unit: "天"
         }
       }
@@ -2216,7 +2202,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
         <a class="title flat-box" target="_self" href='/'>
           
-            <img no-lazy class='logo' src='https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/Logo-NavBar@3x.png'/>
+            <img no-lazy class='logo' src='es.cloudinary.com/dekmp7ltk/image/upload/v1735644433/jingui32-32_cpcfqe.png'/>
           
           
           
@@ -2232,13 +2218,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/" title="博客"
+                href="/" title="首页"
                   
                   
                   
                     active-action="action-home"
                   >
-                  <i class='fa-solid fa-rss fa-fw'></i>博客
+                  <i class='fa-solid fa-rss fa-fw'></i>首页
                 </a>
                 
               </li>
@@ -2327,6 +2313,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                 </a>
                 
               </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box header toggle-mode-btn">
+                  <i class='fas fa-moon fa-fw'></i>暗黑模式
+                </a>
+              <li>
             
           
           
@@ -2353,13 +2349,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/" title="博客"
+                href="/" title="首页"
                   
                   
                   
                     active-action="action-home"
                   >
-                  <i class='fa-solid fa-rss fa-fw'></i>博客
+                  <i class='fa-solid fa-rss fa-fw'></i>首页
                 </a>
                 
               </li>
@@ -2448,6 +2444,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                 </a>
                 
               </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box header toggle-mode-btn">
+                  <i class='fas fa-moon fa-fw'></i>暗黑模式
+                </a>
+              <li>
             
           
             
@@ -2487,35 +2493,35 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               
               active-action="action-v4getting-started">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f5c3.svg'><p>博客</p>
+              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f3e1.svg'><p>博客</p>
             </a>
           
             <a href="/faqs/"
               
               
               active-action="action-faqs">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f516.svg'><p>帮助</p>
+              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f5c2.svg'><p>分类</p>
             </a>
           
             <a href="/examples/"
               
               
               active-action="action-examples">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f396.svg'><p>示例</p>
+              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f516.svg'><p>标签</p>
             </a>
           
             <a href="/contributors/"
               
               
               active-action="action-contributors">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f389.svg'><p>社区</p>
+              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f5c3.svg'><p>归档</p>
             </a>
           
             <a href="/archives/"
               
               
               active-action="action-archives">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f4f0.svg'><p>友链</p>
+              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/2764.svg'><p>友链</p>
             </a>
           
             <a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/"
@@ -2542,7 +2548,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
 	
-	  <article id="arc" class="post article white-box reveal shadow floatable blur">
+	  <article id="arc" class="post article white-box reveal shadow blur">
 			
 			
 				
@@ -2550,102 +2556,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 					
 						
 						<h2>2024</h2>
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/12/31/869145968/">
-									<time>12-31</time>
-									
-										12月31日记——年终碎碎念
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/12/25/868963594/">
-									<time>12-25</time>
-									
-										《清醒地活》读书小结
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/09/21/866226477/">
-									<time>09-21</time>
-									
-										9月21日记
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/09/20/866178538/">
-									<time>09-20</time>
-									
-										9月19日记
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/08/07/864889404/">
-									<time>08-07</time>
-									
-										8月7日记
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/08/07/%E6%89%A9%E5%88%97%E6%9D%A1/">
-									<time>08-07</time>
-									
-										扩列条
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
 					
 						<div class='timenode'>
 								<a class="meta" href="/2024/08/06/hello-world/">
@@ -2663,1233 +2573,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 				
 				
 					
-						<div class='timenode'>
-								<a class="meta" href="/2024/05/04/861943373/">
-									<time>05-04</time>
-									
-										5月4日记
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/03/04/859934640/">
-									<time>03-04</time>
-									
-										3月4日记
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						
-						<h2>2023</h2>
-					
-						<div class='timenode'>
-								<a class="meta" href="/2023/11/06/855859453/">
-									<time>11-06</time>
-									
-										11月6日记
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2023/10/24/855356511/">
-									<time>10-24</time>
-									
-										10月24日记
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2023/10/09/854810968/">
-									<time>10-09</time>
-									
-										10月9日记
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2023/07/23/851815548/">
-									<time>07-23</time>
-									
-										7月22日记~
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2023/07/17/851588343/">
-									<time>07-17</time>
-									
-										7月17日记
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2023/07/10/851315763/">
-									<time>07-10</time>
-									
-										7月10日记（读书笔记）
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2023/06/24/850632731/">
-									<time>06-24</time>
-									
-										暑期实习备战
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2023/06/15/850325104/">
-									<time>06-15</time>
-									
-										6月15日记二
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2023/06/15/850314054/">
-									<time>06-15</time>
-									
-										6月15日记
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2023/06/06/849938117/">
-									<time>06-06</time>
-									
-										6月6日记
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2023/06/05/849880455/">
-									<time>06-05</time>
-									
-										6月5日记
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2023/06/04/849837004/">
-									<time>06-04</time>
-									
-										6月3日记
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2023/06/02/849760429/">
-									<time>06-02</time>
-									
-										6月1日记
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2023/02/05/844521866/">
-									<time>02-05</time>
-									
-										oufc记忆~
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						
-						<h2>2022</h2>
-					
-						<div class='timenode'>
-								<a class="meta" href="/2022/09/09/837571139/">
-									<time>09-09</time>
-									
-										9月9日记
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2022/08/31/837133407/">
-									<time>08-31</time>
-									
-										8月31日记
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2022/08/30/837070405/">
-									<time>08-30</time>
-									
-										8月30日记
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2022/06/09/832780965/">
-									<time>06-09</time>
-									
-										回忆高考，抒发感想
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2022/05/16/831373093/">
-									<time>05-16</time>
-									
-										5月16日记
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2022/05/11/831082902/">
-									<time>05-11</time>
-									
-										角色365问
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2022/02/12/825599221/">
-									<time>02-12</time>
-									
-										2月12日记
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2022/02/12/825598598/">
-									<time>02-12</time>
-									
-										2022锻炼计划
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2022/01/21/824413994/">
-									<time>01-21</time>
-									
-										1月21日记——关于每日和长期计划制定
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2022/01/01/823037921/">
-									<time>01-01</time>
-									
-										2021年度总结
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						
-						<h2>2021</h2>
-					
-						<div class='timenode'>
-								<a class="meta" href="/2021/09/12/812476416/">
-									<time>09-12</time>
-									
-										回复自律提问的叨逼叨
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2021/09/10/812343829/">
-									<time>09-10</time>
-									
-										小谈教师节
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2021/08/22/810864826/">
-									<time>08-22</time>
-									
-										党章学习笔记Day6
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2021/08/21/810781923/">
-									<time>08-21</time>
-									
-										党章学习笔记——Day4&Day5
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2021/08/19/810614033/">
-									<time>08-19</time>
-									
-										党章学习笔记——Day2&Day3
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2021/08/17/810425135/">
-									<time>08-17</time>
-									
-										党章学习笔记——Day 1
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2021/08/16/810389141/">
-									<time>08-16</time>
-									
-										8月16日记
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2021/07/25/808501320/">
-									<time>07-25</time>
-									
-										7月25日记
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2021/06/25/806137794/">
-									<time>06-25</time>
-									
-										6月25日记
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
 						
 						<h2>2020</h2>
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/12/31/789950522/">
-									<time>12-31</time>
-									
-										2020周记Week52
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/12/19/788539244/">
-									<time>12-19</time>
-									
-										2020周记Week51
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/11/13/783877287/">
-									<time>11-13</time>
-									
-										2020周记Week46
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/11/08/783314394/">
-									<time>11-08</time>
-									
-										2020周记Week45
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/10/18/781147422/">
-									<time>10-18</time>
-									
-										2020周记Week42
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/10/10/780363855/">
-									<time>10-10</time>
-									
-										2020周记Week41
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/10/10/780363821/">
-									<time>10-10</time>
-									
-										2020周记Week40
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/09/30/779389127/">
-									<time>09-30</time>
-									
-										2020周记Week39
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/09/30/779388011/">
-									<time>09-30</time>
-									
-										2020周记Week38
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/09/30/779387940/">
-									<time>09-30</time>
-									
-										2020周记Week37
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/09/16/777988663/">
-									<time>09-16</time>
-									
-										2020周记Week36
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/08/29/776000470/">
-									<time>08-29</time>
-									
-										2020周记Week35
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/08/25/775476899/">
-									<time>08-25</time>
-									
-										《富爸爸穷爸爸》解读 阅读笔记
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/08/25/775465610/">
-									<time>08-25</time>
-									
-										2020周记Week34
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/08/18/774678319/">
-									<time>08-18</time>
-									
-										2020周记Week33
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/08/10/773750538/">
-									<time>08-10</time>
-									
-										2020周记Week32——周游青海湖
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/07/31/772615764/">
-									<time>07-31</time>
-									
-										2020周记Week31
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/07/31/772608271/">
-									<time>07-31</time>
-									
-										2020周记Week30——高考放榜实录
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/07/19/771243741/">
-									<time>07-19</time>
-									
-										2020周记Week29
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/07/15/770727505/">
-									<time>07-15</time>
-									
-										2020周记Week28——高考小记
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/07/01/769183645/">
-									<time>07-01</time>
-									
-										2020周记Week26
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/06/21/768108765/">
-									<time>06-21</time>
-									
-										2020周记Week24
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/05/31/765009850/">
-									<time>05-31</time>
-									
-										2020周记Week22
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/05/31/765009444/">
-									<time>05-31</time>
-									
-										2020周记Week20
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/05/03/761179736/">
-									<time>05-03</time>
-									
-										2020周记Week18
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/04/25/760197995/">
-									<time>04-25</time>
-									
-										2020周记Week17
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/04/25/760190457/">
-									<time>04-25</time>
-									
-										2020周记Week16
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/04/11/758302627/">
-									<time>04-11</time>
-									
-										2020周记Week15
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/04/10/758154855/">
-									<time>04-10</time>
-									
-										2020周记Week14
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/03/30/756602825/">
-									<time>03-30</time>
-									
-										2020周记Week13
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/03/22/755544277/">
-									<time>03-22</time>
-									
-										2020周记Week12
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/03/15/754575952/">
-									<time>03-15</time>
-									
-										2020周记Week11&月考四小结&阶段性目标展望
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/03/07/753437664/">
-									<time>03-07</time>
-									
-										2020周记Week10
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/02/29/752511062/">
-									<time>02-29</time>
-									
-										2020周记Week9
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/02/23/751716231/">
-									<time>02-23</time>
-									
-										2020周记Week8
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/02/22/751643069/">
-									<time>02-22</time>
-									
-										2020周记Week7
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/02/22/751642804/">
-									<time>02-22</time>
-									
-										2020周记Week6
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/02/02/750752069/">
-									<time>02-02</time>
-									
-										2020周记Week5
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/01/25/750036453/">
-									<time>01-25</time>
-									
-										2020周记Week4
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/01/18/749473617/">
-									<time>01-18</time>
-									
-										2020周记Week3
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/01/11/748734791/">
-									<time>01-11</time>
-									
-										2020周记Week2
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
 					
 						<div class='timenode'>
 								<a class="meta" href="/2020/01/04/747943502/">
@@ -3933,65 +2618,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop mobile pjax">
+<section class="widget blogger desktop pjax">
   <div class='content'>
     
       
         <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/Logo-NavBar@3x.png'/>
+          <img no-lazy src='https://res.cloudinary.com/dekmp7ltk/image/upload/v1735645556/%E6%99%93%E5%A4%A9%E5%A4%B4%E5%83%8F_jqsved.jpg'/>
         </a>
       
     
     
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">晓天的浮空岛</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fa-solid fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
     
   </div>
 </section>
@@ -4003,6 +2639,28 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
+  
+  <section class="widget category desktop pjax">
+    
+  <header>
+    
+      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+    
+  </header>
+
+
+    <div class='content'>
+      <ul class="entry navigation">
+        
+          <li><a class="flat-box"
+            title="/categories/%E6%97%A5%E8%AE%B0/" href="/categories/%E6%97%A5%E8%AE%B0/"
+            active-action="action-categoriesE697A5E8AEB0"
+            ><div class='name'>日记</div><div class='badge'>(2)</div></a></li>
+        
+      </ul>
+    </div>
+  </section>
+
 
     
   
@@ -4012,7 +2670,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       
   
-  <section class="widget tagcloud desktop mobile pjax">
+  <section class="widget tagcloud desktop pjax">
     
   <header>
     
@@ -4022,14 +2680,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-      <a href="/tags/%E6%89%A9%E5%88%97/" style="font-size: 14px; color: #999">扩列</a> <a href="/tags/%E6%97%A5%E8%AE%B0/" style="font-size: 24px; color: #555">日记</a>
+      <a href="/tags/%E9%AB%98%E8%80%83/" style="font-size: 14px; color: #999">高考</a>
     </div>
   </section>
 
 
     
-  
-
   
 
 
@@ -4113,9 +2769,39 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="social-wrapper" itemprop="about" itemscope itemtype="http://schema.org/Thing">
           
             
-          
+              <a href="/atom.xml"
+                class="social fas fa-rss flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer" itemprop="url">
+                
+              </a>
             
           
+            
+              <a href="mailto:ttyaaron@stanford.edu"
+                class="social fas fa-envelope flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer" itemprop="url">
+                
+              </a>
+            
+          
+            
+              <a href="https://github.com/ttyaaron"
+                class="social fab fa-github flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer" itemprop="url">
+                
+              </a>
+            
+          
+            
+              <a href="https://music.163.com/#/user/home?id=1839970553"
+                class="social fas fa-headphones-alt flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer" itemprop="url">
+                
+              </a>
             
           
         </div>
@@ -4140,10 +2826,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     
       
-        <div class='copyright'>
-        <p><a href="/">Copyright © since 2024 Blablablabla</a></p>
-
-        </div>
+        
+          <div><br></div>
+        
+      
+    
+      
+        
+          <div><p><a href="/">–网站的尽头–</a></p>
+</div>
+        
       
     
     <!-- Custom Files footer begin-->
