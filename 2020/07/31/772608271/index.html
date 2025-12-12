@@ -1893,7 +1893,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1765533767188),
+    lastupdate: new Date(1765534980128),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo"],
       for_post: ["toc"],
@@ -3884,7 +3884,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-  <script defer src="https://gcore.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js" data-pjax></script>
+  <script defer src="https://vercount.one/js" data-pjax></script>
 
 
 <!-- optional -->
@@ -3972,7 +3972,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
   <script>
-  let imgs = ["https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530538/IMG20250930070557_akvwbc.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530678/IMG_20241201_222441_bext1o.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530537/IMG20241128140730_qs8p0v.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530539/mmexport1745193936173_bjmxxk.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530537/IMG20250525123950_gpimnj.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530715/IMG20240826142308_nljfo8.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530750/IMG20250419132509_nkq1ee.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530539/IMG20250525140921_yf0o7d.jpg"];
+  let imgs = ["https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530539/mmexport1745193936173_bjmxxk.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530715/IMG20240826142308_nljfo8.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530750/IMG20250419132509_nkq1ee.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530537/IMG20241128140730_qs8p0v.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530678/IMG_20241201_222441_bext1o.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530539/IMG20250525140921_yf0o7d.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530538/IMG20250930070557_akvwbc.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530537/IMG20250525123950_gpimnj.jpg"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -4303,6 +4303,51 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     <!-- import body_end end-->
     <!-- Custom Files bodyEnd begin-->
     <script src="/js/runtime.js"></script>
+<script>
+// 修复 busuanzi 在 PJAX 环境下浏览量共享的问题
+(function() {
+  function reloadBusuanzi() {
+    // 检查 busuanzi 是否已加载
+    if (typeof window.busuanzi !== 'undefined') {
+      // 删除旧的 busuanzi 脚本和相关变量
+      delete window.busuanzi;
+      delete window.bszCaller;
+      delete window.bszTag;
+    }
+    
+    // 找到所有 busuanzi 相关的元素并重置
+    const busuanziElements = document.querySelectorAll('[id^="busuanzi_"]');
+    busuanziElements.forEach(el => {
+      // 重置为加载状态
+      if (el.id === 'busuanzi_value_page_pv' || el.id === 'busuanzi_value_page_uv') {
+        el.innerHTML = '<i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>';
+      }
+    });
+    
+    // 找到并移除旧的 busuanzi 脚本
+    const oldScript = document.querySelector('script[src*="busuanzi"]');
+    if (oldScript) {
+      oldScript.remove();
+    }
+    
+    // 重新加载 busuanzi 脚本
+    const script = document.createElement('script');
+    script.async = true;
+    script.defer = true;
+    script.src = 'https://gcore.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js';
+    script.setAttribute('data-pjax', '');
+    document.body.appendChild(script);
+  }
+  
+  // 在 PJAX 完成后重新加载 busuanzi
+  if (typeof volantis !== 'undefined' && volantis.pjax) {
+    volantis.pjax.push(function() {
+      // 延迟执行以确保新页面的 DOM 已经更新
+      setTimeout(reloadBusuanzi, 100);
+    }, 'busuanzi-reload');
+  }
+})();
+</script>
 
     <!-- Custom Files bodyEnd end-->
     <!-- front-matter body_end begin -->
