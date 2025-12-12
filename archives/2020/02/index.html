@@ -1889,7 +1889,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1765535156638),
+    lastupdate: new Date(1765535529720),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo"],
       for_post: ["toc"],
@@ -3401,9 +3401,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       
         
-          <div><p>你是第 <span id="busuanzi_value_site_uv"></span> 位访客，欢迎你。</p>
-</div>
-        
       
     
       
@@ -4196,7 +4193,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
   <script>
-  let imgs = ["https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530539/mmexport1745193936173_bjmxxk.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530537/IMG20241128140730_qs8p0v.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530678/IMG_20241201_222441_bext1o.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530750/IMG20250419132509_nkq1ee.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530538/IMG20250930070557_akvwbc.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530537/IMG20250525123950_gpimnj.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530539/IMG20250525140921_yf0o7d.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530715/IMG20240826142308_nljfo8.jpg"];
+  let imgs = ["https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530539/mmexport1745193936173_bjmxxk.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530750/IMG20250419132509_nkq1ee.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530539/IMG20250525140921_yf0o7d.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530715/IMG20240826142308_nljfo8.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530538/IMG20250930070557_akvwbc.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530537/IMG20250525123950_gpimnj.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530537/IMG20241128140730_qs8p0v.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530678/IMG_20241201_222441_bext1o.jpg"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -4511,7 +4508,46 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 <script>
 // 修复 busuanzi 在 PJAX 环境下浏览量共享的问题
 (function() {
+  // 保存站点级别的统计数据
+  let sitePV = null;
+  let siteUV = null;
+  
+  function saveSiteStats() {
+    const sitePVEl = document.getElementById('busuanzi_value_site_pv');
+    const siteUVEl = document.getElementById('busuanzi_value_site_uv');
+    if (sitePVEl && sitePVEl.textContent && !sitePVEl.querySelector('.fa-spin')) {
+      sitePV = sitePVEl.textContent;
+    }
+    if (siteUVEl && siteUVEl.textContent && !siteUVEl.querySelector('.fa-spin')) {
+      siteUV = siteUVEl.textContent;
+    }
+  }
+  
+  function restoreSiteStats() {
+    if (sitePV) {
+      const sitePVEl = document.getElementById('busuanzi_value_site_pv');
+      if (sitePVEl) sitePVEl.textContent = sitePV;
+    }
+    if (siteUV) {
+      const siteUVEl = document.getElementById('busuanzi_value_site_uv');
+      if (siteUVEl) siteUVEl.textContent = siteUV;
+    }
+  }
+  
   function reloadBusuanzi() {
+    // 先保存站点级别的统计
+    saveSiteStats();
+    
+    // 清除页面级别的显示，避免显示错误数据
+    const pagePVEl = document.getElementById('busuanzi_value_page_pv');
+    const pageUVEl = document.getElementById('busuanzi_value_page_uv');
+    if (pagePVEl) {
+      pagePVEl.innerHTML = '<i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>';
+    }
+    if (pageUVEl) {
+      pageUVEl.innerHTML = '<i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>';
+    }
+    
     // 检查 busuanzi 是否已加载
     if (typeof window.busuanzi !== 'undefined') {
       // 删除旧的 busuanzi 脚本和相关变量
@@ -4519,15 +4555,6 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
       delete window.bszCaller;
       delete window.bszTag;
     }
-    
-    // 找到所有 busuanzi 相关的元素并重置
-    const busuanziElements = document.querySelectorAll('[id^="busuanzi_"]');
-    busuanziElements.forEach(el => {
-      // 重置为加载状态
-      if (el.id === 'busuanzi_value_page_pv' || el.id === 'busuanzi_value_page_uv') {
-        el.innerHTML = '<i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>';
-      }
-    });
     
     // 找到并移除旧的 busuanzi 脚本
     const oldScript = document.querySelector('script[src*="busuanzi"]');
@@ -4541,6 +4568,14 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     script.defer = true;
     script.src = 'https://gcore.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js';
     script.setAttribute('data-pjax', '');
+    
+    // 脚本加载完成后恢复站点级别的统计
+    script.onload = function() {
+      setTimeout(function() {
+        restoreSiteStats();
+      }, 500);
+    };
+    
     document.body.appendChild(script);
   }
   
