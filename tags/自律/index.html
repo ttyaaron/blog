@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/#5.8.1'>
+    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/#5.8.0'>
   <meta name="generator" content="Hexo 7.3.0">
-  <meta name="Volantis" content="5.8.1">
+  <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
   <meta name="robots" content="noindex,follow">
@@ -1889,9 +1889,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1765532746087),
+    lastupdate: new Date(1765533767188),
     sidebar: {
-      for_page: ["blogger","category","tagcloud"],
+      for_page: ["blogger","category","tagcloud","webinfo"],
       for_post: ["toc"],
       webinfo: {
         lastupd: {
@@ -3396,6 +3396,69 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
   
 
+  
+    
+    
+      
+<section class="widget desktop mobile pjax">
+  
+  <header>
+    
+      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <div class="webinfo">
+      
+        <div class="webinfo-item">
+          <div>文章数目：</div>
+          <div>104 篇</div>
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>已运行时间：</div>
+          <div id="webinfo-runtime-count"></div>
+        </div>
+      
+
+
+      
+
+      
+        <div class="webinfo-item">
+          <div>本站访客数：</div>
+          
+          <div><span id="busuanzi_value_site_uv"><i class="fa-solid fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> 人</div>
+          
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>本站总访问量：</div>
+          
+          <div><span id="busuanzi_value_site_pv"><i class="fa-solid fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> 次</div>
+          
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>最后活动时间：</div>
+          <div id="last-update-show">2025-12-12 日</div>
+        </div>
+      
+    </div>
+  </div>
+</section>
+
+    
+  
+
 
 <div class="widget-sticky pjax">
 
@@ -3403,10 +3466,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -4334,7 +4393,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
   <script>
-  let imgs = ["https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530537/IMG20241128140730_qs8p0v.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530537/IMG20250525123950_gpimnj.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530539/IMG20250525140921_yf0o7d.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530750/IMG20250419132509_nkq1ee.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530715/IMG20240826142308_nljfo8.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530539/mmexport1745193936173_bjmxxk.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530678/IMG_20241201_222441_bext1o.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530538/IMG20250930070557_akvwbc.jpg"];
+  let imgs = ["https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530538/IMG20250930070557_akvwbc.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530678/IMG_20241201_222441_bext1o.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530537/IMG20241128140730_qs8p0v.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530539/mmexport1745193936173_bjmxxk.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530537/IMG20250525123950_gpimnj.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530715/IMG20240826142308_nljfo8.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530750/IMG20250419132509_nkq1ee.jpg","https://res.cloudinary.com/dekmp7ltk/image/upload/v1765530539/IMG20250525140921_yf0o7d.jpg"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -4645,7 +4704,8 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     <!-- import body_end begin-->
     <!-- import body_end end-->
     <!-- Custom Files bodyEnd begin-->
-    
+    <script src="/js/runtime.js"></script>
+
     <!-- Custom Files bodyEnd end-->
     <!-- front-matter body_end begin -->
     <!-- front-matter body_end end -->
