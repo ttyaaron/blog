@@ -5,7 +5,7 @@
     if (!countElement) return;
     
     // 从配置中获取建站日期，如果没有则使用默认值
-    var startDate = new Date('2024/12/31');  // 这里需要和 _config.volantis.yml 中的日期一致
+    var startDate = new Date('2025/01/01');  // 这里需要和 _config.volantis.yml 中的日期一致
     
     function updateRuntime() {
       var now = new Date();
